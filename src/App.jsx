@@ -9,7 +9,7 @@ import About from "./pages/About.jsx";
 import Home from "./pages/Home.jsx";
 import News from "./pages/News.jsx";
 import RootLayOut from "./layout/RootLayOut.jsx";
-import Console from "./pages/console.jsx";
+import Console from "./pages/Console.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SignIn from "./home/SignIn.jsx";
 import CreateUser from "./pages/createUser.jsx";
