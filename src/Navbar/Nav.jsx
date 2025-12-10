@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Ps5Logo from "../assets/Ps5.png";
+import Ps5Logo from "../assets/ps5.png";
 
 function NavBar() {
   return (
