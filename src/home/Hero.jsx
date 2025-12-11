@@ -49,17 +49,20 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative w-screen h-[calc(100vh-80px)] overflow-hidden bg-black ">
+    <div
+      className="relative w-screen overflow-hidden aspect-3/2 bg-blue-900 bg-contain bg-no-repeat bg-center"
+      style={{ backgroundImage: `url(${HeroImage})` }}
+    >
       {/* 背景圖 */}
-      <img
+      {/* <img
         src={HeroImage}
         alt="ps5hero"
         className={`
-          absolute inset-0 w-full h-full object-fill object-center
+          absolute inset-0 w-full h-full object-contain object-center
           transition-opacity duration-1500 
           ${showBg ? "opacity-100" : "opacity-40"}
         `}
-      />
+      /> */}
 
       {/* 黑色遮罩（讓一開始更有電影感） */}
       <div
@@ -71,11 +74,11 @@ function Hero() {
       />
 
       {/* 文字區塊 */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-[0.2em] text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
+      <div className="relative z-10 flex flex-col gap-4 items-center justify-center text-center h-full px-4">
+        <h1 className="text-[18px] lg:text-[52px] md:text-[36px] sm:text-[28px] font-bold tracking-[0.2em] text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
           {typedTitle}
         </h1>
-        <p className=" text-2xl sm:text-3xl font-semibold text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">
+        <p className="text-[12px] lg:text-[38px] md:text-[24px] sm:text-[16px] font-semibold text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">
           {typedSubtitle}
         </p>
       </div>
