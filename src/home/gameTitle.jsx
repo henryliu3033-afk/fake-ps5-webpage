@@ -13,10 +13,10 @@ function GamesTiltle() {
       />
       <div className="flex flex-col justify-center items-center text-center gap-6 md:w-1/2">
         <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          跨越时代的游戏阵容，让每一次启动主机都是一场盛宴
+          跨越時代的遊戲陣容,讓每一次啟動主機都是一場盛宴
         </h3>
         <p className="text-lg md:text-2xl">
-          从神作级叙事到极致沉浸式玩法，PS5 不只是性能强大，更是大作云集的平台。
+          從神作級敘事到極致沉浸式玩法,PS5 不只是性能強大,更是大作雲集的平台
         </p>
         <button
           onClick={() => navigate("/console", { replace: true })}

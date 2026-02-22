@@ -36,9 +36,9 @@ function RecentNews() {
         transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
       >
         <p className="text-3xl font-medium text-blue-100 leading-relaxed max-w-4xl drop-shadow">
-          無論是主機更新、熱門遊戲消息，還是周邊新品發表，
+          無論是主機更新、熱門遊戲消息，還是周邊新品發表
           <br />
-          這裡為你整理最即時、最重要的 PlayStation 情報。
+          這裡為你整理最即時、最重要的 PlayStation 情報
         </p>
 
         <motion.button

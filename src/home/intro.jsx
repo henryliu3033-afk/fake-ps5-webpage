@@ -18,10 +18,10 @@ function Intro() {
 
 
         <h2 className="text-3xl md:text-5xl font-bold">真 4K + 动态提升技术</h2>
-        <p className="text-lg md:text-2xl">即使在高负载场景，也能保持流畅帧率和细腻画质。</p>
+        <p className="text-lg md:text-2xl">即使在高负载场景,也能保持流畅帧率和细腻画质</p>
 
         <h2 className="text-3xl md:text-5xl font-bold">Tempest 3D Audio 强化版</h2>
-        <p className="text-lg md:text-2xl">更立体、更沉浸、更清晰的音频细节。</p>
+        <p className="text-lg md:text-2xl">更立体、更沉浸、更清晰的音频细节</p>
 
         <button
           onClick={() => navigate("/products", { replace: true })}

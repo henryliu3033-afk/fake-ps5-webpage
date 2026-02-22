@@ -45,9 +45,9 @@ function ProductsIntro() {
         </h1>
 
         <p className="text-2xl text-blue-800 mt-6 leading-relaxed">
-          从 Tempest 3D 音效、DualSense 触觉回馈，到 PS5 高清追踪设备，
+          從 Tempest 3D 音效、DualSense 觸覺回饋,到 PS5 高清追蹤設備,
           <br />
-          每一件周边都为了提升沉浸感而诞生。
+          每一件周邊都為了提升沉浸感而誕生
         </p>
 
         {/* 底部蓝光条 */}
