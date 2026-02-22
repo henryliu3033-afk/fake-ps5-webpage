@@ -15,84 +15,83 @@ function CreateNewUser() {
     }
     alert("創建成功");
   }
+
   return (
-    <>
-      <div>
-        <div className="create user bg-blue-200 w-screen h-screen flex justify-center items-center">
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-9 bg-blue-400 w-[800px] h-[900px] justify-center items-center rounded-2xl"
-          >
-            <h1 className="text-3xl font-bold">歡迎創建新用戶</h1>
-            <div className="email flex gap-4">
-              <label>賬號</label>
-              <input
-                type="email"
-                placeholder="Email Here..."
-                className="bg-white text-center"
-                required
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-              />
-            </div>
-            <div className="flex gap-4">
-              <label>密碼</label>
-              <input
-                type="text"
-                placeholder="Password Here... "
-                className="bg-white text-center"
-                value={password}
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
-                required
-              />
-            </div>
-            <div className=" flex gap-4 ">
-              <label>手機/電話</label>
-              <input
-                type="tel"
-                className="flex bg-white"
-                required
-                pattern="^09\d{8}$"
-                value={phoneNumbers}
-                onChange={(e) => {
-                  setPhoneNumbers(e.target.value);
-                }}
-              />
-            </div>
-            <div className="flex gap-4">
-              <label>地址</label>
-              <input
-                type="address"
-                placeholder="台北市..."
-                className="bg-white"
-                required
-                value={address}
-                onChange={(e) => {
-                  setAdress(e.target.value);
-                }}
-              />
-              <label>郵遞區號</label>
-              <input
-                type="text"
-                required
-                value={postNumbers}
-                onChange={(e) => {
-                  setPostNumbers(e.target.value);
-                }}
-                className="bg-white w-24"
-              />
-            </div>
-            <button type="submit" className="bg-blue-500 w-3xs rounded-2xl">
-              創建
-            </button>
-          </form>
+    /* ✅ w-screen + h-[900px] replaced — w-[800px] was overflowing on mobile */
+    <div className="bg-blue-200 w-full min-h-screen flex justify-center items-center px-4 py-16">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-7 bg-blue-400 w-full max-w-xl justify-center items-center rounded-2xl px-8 py-14"
+      >
+        <h1 className="text-2xl md:text-3xl font-bold">歡迎創建新用戶</h1>
+
+        <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
+          <label className="w-24 text-right shrink-0">賬號</label>
+          <input
+            type="email"
+            placeholder="Email Here..."
+            className="flex-1 bg-white text-center rounded-lg px-4 py-2 w-full"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
-      </div>
-    </>
+
+        <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
+          <label className="w-24 text-right shrink-0">密碼</label>
+          <input
+            type="password"
+            placeholder="Password Here..."
+            className="flex-1 bg-white text-center rounded-lg px-4 py-2 w-full"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
+          <label className="w-24 text-right shrink-0">手機/電話</label>
+          <input
+            type="tel"
+            className="flex-1 bg-white rounded-lg px-4 py-2 w-full"
+            required
+            pattern="^09\d{8}$"
+            placeholder="09xxxxxxxx"
+            value={phoneNumbers}
+            onChange={(e) => setPhoneNumbers(e.target.value)}
+          />
+        </div>
+
+        {/* ✅ Address + postcode stacked vertically on mobile to avoid overflow */}
+        <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
+            <label className="w-24 text-right shrink-0">地址</label>
+            <input
+              type="text"
+              placeholder="台北市..."
+              className="flex-1 bg-white rounded-lg px-4 py-2 w-full"
+              required
+              value={address}
+              onChange={(e) => setAdress(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
+            <label className="w-24 text-right shrink-0">郵遞區號</label>
+            <input
+              type="text"
+              required
+              className="bg-white rounded-lg px-4 py-2 w-full sm:w-32"
+              value={postNumbers}
+              onChange={(e) => setPostNumbers(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <button type="submit" className="bg-blue-600 hover:bg-blue-700 transition text-white w-40 py-2 rounded-2xl text-lg mt-2">
+          創建
+        </button>
+      </form>
+    </div>
   );
 }
 

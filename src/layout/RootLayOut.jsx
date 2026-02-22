@@ -6,7 +6,8 @@ function RootLayOut() {
   return (
     <>
       <NavBar />
-      <div className="pt-20">
+      {/* ✅ Removed pt-20 — navbar is sticky so no offset needed after CSS reset */}
+      <div>
         <Outlet />
       </div>
     </>
