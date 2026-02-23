@@ -41,7 +41,7 @@ function ProductsIntro() {
         transition={{ duration: 1.0, ease: "easeOut", delay: 0.3 }}
       >
         <h1 className="text-5xl font-extrabold text-blue-900 drop-shadow-lg">
-          PS5 周边装备 — 次世代科技的延伸
+          PS5 周邊裝備 — 次時代科技的延伸
         </h1>
 
         <p className="text-2xl text-blue-800 mt-6 leading-relaxed">

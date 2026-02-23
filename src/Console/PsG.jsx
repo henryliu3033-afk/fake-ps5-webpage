@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function PlayStationIntro({ img, textTitle, text }) {
   return (
     /* ✅ h-[1600px] / h-[1200px] were enormous — replaced with min-h-screen and auto sizing */
-    <div className="w-full min-h-screen flex flex-col justify-center items-center text-center relative bg-gradient-to-b from-blue-200 to-blue-300 overflow-hidden py-20 px-6">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center text-center relative bg-linear-to-b from-blue-200 to-blue-300 overflow-hidden py-20 px-6">
 
       {/* Console image */}
       <motion.img
