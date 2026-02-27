@@ -43,7 +43,7 @@ function NavBar() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-[#003791] text-white flex flex-col items-center py-6 gap-5 text-lg font-semibold z-40 w-full">
+        <div className="md:hidden bg-[#003791] text-white flex flex-col items-center py-6 gap-5 text-lg font-semibold z-40 w-full sticky top-16">
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/News" onClick={() => setMenuOpen(false)}>News</Link>
           <Link to="/console" onClick={() => setMenuOpen(false)}>Console</Link>
