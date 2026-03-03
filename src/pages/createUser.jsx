@@ -9,7 +9,7 @@ function CreateUser() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!email || !password) {
-      alert("請輸入賬號和密碼");
+      alert("請輸入帳號和密碼");
       return;
     }
     alert(`登入成功! ${email}`);
@@ -19,7 +19,7 @@ function CreateUser() {
     /* ✅ w-screen + h-[1000px] replaced with responsive min-h-screen */
     <div className="flex flex-col justify-center items-center bg-blue-300 w-full min-h-screen px-4 py-16">
       <div className="flex flex-col justify-center items-center bg-blue-400 w-full max-w-lg rounded-2xl gap-8 py-14 px-8">
-        <h1 className="text-2xl md:text-3xl font-semibold">歡迎來到會員界面</h1>
+        <h1 className="text-2xl md:text-3xl font-semibold">歡迎來到會員介面</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full items-center">
 
           <div className="flex flex-col sm:flex-row gap-3 w-full items-center">
